@@ -3,7 +3,7 @@ package com.jera.apptemplate.presentation.graph.component;
 
 import android.app.Activity;
 import android.content.Context;
-import android.support.v4.app.Fragment;
+import androidx.fragment.app.Fragment;
 import com.google.gson.Gson;
 import com.jakewharton.retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory;
 import com.jera.apptemplate.data.client.ApiClient;

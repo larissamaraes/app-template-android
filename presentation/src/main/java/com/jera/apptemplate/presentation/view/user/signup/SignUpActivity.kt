@@ -3,9 +3,9 @@ package com.jera.apptemplate.presentation.view.user.signup
 import android.Manifest
 import android.content.Context
 import android.content.Intent
-import android.databinding.DataBindingUtil
+import androidx.databinding.DataBindingUtil
 import android.os.Bundle
-import android.support.design.widget.TextInputLayout
+import com.google.android.material.textfield.TextInputLayout
 import circleCrop
 import com.jera.apptemplate.R
 import com.jera.apptemplate.databinding.ActivityRegisterBinding

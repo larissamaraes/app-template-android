@@ -1,8 +1,8 @@
 package com.jera.apptemplate.presentation
 
 import android.app.Activity
-import android.support.multidex.MultiDexApplication
-import android.support.v4.app.Fragment
+import androidx.multidex.MultiDexApplication
+import androidx.fragment.app.Fragment
 import com.jera.apptemplate.data.util.storage.PreferencesCache
 import com.jera.apptemplate.presentation.graph.component.DaggerAppComponent
 import dagger.android.AndroidInjector
@@ -14,7 +14,7 @@ import javax.inject.Inject
 class AppTemplateApplication : MultiDexApplication(), HasActivityInjector {
 
     @Inject
-    lateinit var mFragmentInjector: DispatchingAndroidInjector<Fragment>
+    lateinit var mFragmentInjector: DispatchingAndroidInjector<androidx.fragment.app.Fragment>
 
     @Inject
     lateinit var dispatchingAndroidInjector: DispatchingAndroidInjector<Activity>

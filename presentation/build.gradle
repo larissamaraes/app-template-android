@@ -26,7 +26,7 @@ android {
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode rootProject.ext.versionCode
         versionName rootProject.ext.versionName
-        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         vectorDrawables.useSupportLibrary = true
         multiDexEnabled true
     }
@@ -64,8 +64,8 @@ dependencies {
     implementation project(":data")
 
     // android support
-    implementation "com.android.support:appcompat-v7:$supportVersion"
-    implementation "com.android.support:design:$supportVersion"
+    implementation 'androidx.appcompat:appcompat:1.0.0'
+    implementation 'com.google.android.material:material:1.0.0'
 
     // rx
     implementation "io.reactivex.rxjava2:rxkotlin:$rxKotlinVersion"
@@ -88,13 +88,13 @@ dependencies {
     kapt "com.google.dagger:dagger-android-processor:$daggerVersion"
 
     // multidex
-    implementation "com.android.support:multidex:$multidexVersion"
+    implementation 'androidx.multidex:multidex:2.0.0'
 
     // kotlin
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlinVersion"
 
     // LiveData + ViewModel
-    api "android.arch.lifecycle:extensions:$rootProject.archLifecycleVersion"
+    api 'androidx.lifecycle:lifecycle-extensions:2.0.0'
 
     // crashlytics
     implementation('com.crashlytics.sdk.android:crashlytics:2.9.0@aar') {

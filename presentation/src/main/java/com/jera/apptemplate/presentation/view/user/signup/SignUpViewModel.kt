@@ -1,7 +1,7 @@
 package com.jera.apptemplate.presentation.view.user.signup
 
-import android.arch.lifecycle.LiveData
-import android.arch.lifecycle.MutableLiveData
+import androidx.lifecycle.LiveData
+import androidx.lifecycle.MutableLiveData
 import com.jera.apptemplate.domain.interactors.user.SignUp
 import com.jera.apptemplate.domain.util.field.InvalidFieldsException
 import com.jera.apptemplate.util.forms.SignUpForm

@@ -1,8 +1,8 @@
 package com.jera.apptemplate.presentation.view.splash
 
-import android.arch.lifecycle.Lifecycle
-import android.arch.lifecycle.LiveData
-import android.arch.lifecycle.OnLifecycleEvent
+import androidx.lifecycle.Lifecycle
+import androidx.lifecycle.LiveData
+import androidx.lifecycle.OnLifecycleEvent
 import com.jera.apptemplate.domain.interactors.user.GetPersistedUser
 import com.jera.apptemplate.util.base.BaseViewModel
 import com.jera.apptemplate.util.extension.defaultMutableLiveData

@@ -3,8 +3,8 @@ package com.jera.apptemplate.util.extension
 import android.app.AlertDialog
 import android.app.Dialog
 import android.content.*
-import android.support.annotation.StringRes
-import android.support.v4.content.LocalBroadcastManager
+import androidx.annotation.StringRes
+import androidx.localbroadcastmanager.content.LocalBroadcastManager
 import android.widget.Toast
 import com.jera.apptemplate.R
 import com.jera.apptemplate.util.viewmodel.DialogData
@@ -57,11 +57,11 @@ fun Context.registerLocalReceiver(action: String, callback: (context: Context?, 
         override fun onReceive(c: Context?, i: Intent?) = callback(c, i)
     }
     val filter = IntentFilter(action)
-    LocalBroadcastManager.getInstance(this).registerReceiver(broadcastReceiver, filter)
+    androidx.localbroadcastmanager.content.LocalBroadcastManager.getInstance(this).registerReceiver(broadcastReceiver, filter)
     return broadcastReceiver
 }
 
 fun Context.unregisterLocalReceiver(broadcastReceiver: BroadcastReceiver) {
-    LocalBroadcastManager.getInstance(this).unregisterReceiver(broadcastReceiver)
+    androidx.localbroadcastmanager.content.LocalBroadcastManager.getInstance(this).unregisterReceiver(broadcastReceiver)
 }
 

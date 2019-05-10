@@ -1,10 +1,10 @@
 package com.jera.apptemplate.util.base
 
-import android.arch.lifecycle.LifecycleObserver
-import android.arch.lifecycle.LiveData
-import android.arch.lifecycle.MutableLiveData
-import android.arch.lifecycle.ViewModel
-import android.support.annotation.CallSuper
+import androidx.lifecycle.LifecycleObserver
+import androidx.lifecycle.LiveData
+import androidx.lifecycle.MutableLiveData
+import androidx.lifecycle.ViewModel
+import androidx.annotation.CallSuper
 import com.jera.apptemplate.util.arch.Event
 import com.jera.apptemplate.util.error.ErrorHandler
 import com.jera.apptemplate.util.navigation.NavData

@@ -27,24 +27,24 @@ public final class ContextExtensionsKt {
     }
     
     public static final void shortToast(@org.jetbrains.annotations.NotNull()
-    android.content.Context $receiver, @android.support.annotation.StringRes()
+    android.content.Context $receiver, @androidx.annotation.StringRes()
     int messageId) {
     }
     
     public static final void shortToast(@org.jetbrains.annotations.NotNull()
     android.content.Context $receiver, @org.jetbrains.annotations.NotNull()
-    @android.support.annotation.StringRes()
+    @androidx.annotation.StringRes()
     java.lang.String message) {
     }
     
     public static final void longToast(@org.jetbrains.annotations.NotNull()
-    android.content.Context $receiver, @android.support.annotation.StringRes()
+    android.content.Context $receiver, @androidx.annotation.StringRes()
     int messageId) {
     }
     
     public static final void longToast(@org.jetbrains.annotations.NotNull()
     android.content.Context $receiver, @org.jetbrains.annotations.NotNull()
-    @android.support.annotation.StringRes()
+    @androidx.annotation.StringRes()
     java.lang.String message) {
     }
     

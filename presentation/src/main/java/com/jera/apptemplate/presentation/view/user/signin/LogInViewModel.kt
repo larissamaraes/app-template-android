@@ -1,17 +1,14 @@
 package com.jera.apptemplate.presentation.view.user.signin
 
-import android.arch.lifecycle.LiveData
-import android.arch.lifecycle.MutableLiveData
+import androidx.lifecycle.LiveData
+import androidx.lifecycle.MutableLiveData
 import com.jera.apptemplate.domain.interactors.user.LogIn
-import com.jera.apptemplate.util.extension.defaultPlaceholders
-import com.jera.apptemplate.util.extension.defaultSched
 import com.jera.apptemplate.domain.util.field.InvalidFieldsException
 import com.jera.apptemplate.domain.util.provider.SchedulerProvider
 import com.jera.apptemplate.util.base.BaseViewModel
 import com.jera.apptemplate.util.forms.LoginForm
 import com.jera.apptemplate.util.navigation.NavData
 import io.reactivex.disposables.Disposable
-import io.reactivex.rxkotlin.subscribeBy
 import javax.inject.Inject
 
 class LogInViewModel @Inject constructor(

@@ -2,7 +2,7 @@ package com.jera.apptemplate.presentation.view.user.signin
 
 import android.content.Context
 import android.content.Intent
-import android.databinding.DataBindingUtil
+import androidx.databinding.DataBindingUtil
 import android.os.Bundle
 import com.jera.apptemplate.R
 import com.jera.apptemplate.databinding.ActivityLoginBinding

@@ -1,6 +1,6 @@
 package com.jera.apptemplate.util.arch
 
-import android.arch.lifecycle.MutableLiveData
+import androidx.lifecycle.MutableLiveData
 
 class FlexibleLiveData<T> : MutableLiveData<T>() {
 

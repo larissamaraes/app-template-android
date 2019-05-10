@@ -2,7 +2,7 @@ package com.jera.apptemplate.util.resource
 
 import android.content.Context
 import android.net.Uri
-import android.support.annotation.StringRes
+import androidx.annotation.StringRes
 import com.jera.apptemplate.R
 import com.jera.apptemplate.domain.util.resource.Strings
 import javax.inject.Inject

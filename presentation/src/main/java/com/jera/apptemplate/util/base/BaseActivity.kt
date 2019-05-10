@@ -2,8 +2,8 @@ package com.jera.apptemplate.util.base
 
 import android.app.Dialog
 import android.os.Bundle
-import android.support.v4.app.Fragment
-import android.support.v7.app.AppCompatActivity
+import androidx.fragment.app.Fragment
+import androidx.appcompat.app.AppCompatActivity
 import com.jera.apptemplate.presentation.AppTemplateApplication
 import com.jera.apptemplate.util.extension.observeEvent
 import com.jera.apptemplate.util.extension.shortToast
@@ -20,7 +20,7 @@ import javax.inject.Inject
 abstract class BaseActivity : AppCompatActivity(), HasSupportFragmentInjector {
 
     @Inject
-    protected lateinit var fragmentInjector: DispatchingAndroidInjector<Fragment>
+    protected lateinit var fragmentInjector: DispatchingAndroidInjector<androidx.fragment.app.Fragment>
 
     private var dialog: Dialog? = null
 
@@ -39,7 +39,7 @@ abstract class BaseActivity : AppCompatActivity(), HasSupportFragmentInjector {
         baseViewModel.toast.observeEvent(this, ::onNextToast)
     }
 
-    override fun supportFragmentInjector(): AndroidInjector<Fragment> {
+    override fun supportFragmentInjector(): AndroidInjector<androidx.fragment.app.Fragment> {
         return fragmentInjector
     }
 

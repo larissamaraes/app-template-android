@@ -114,7 +114,7 @@ public final class AndroidStrings implements com.jera.apptemplate.domain.util.re
         return null;
     }
     
-    private final java.lang.String res(@android.support.annotation.StringRes()
+    private final java.lang.String res(@androidx.annotation.StringRes()
     int stringId) {
         return null;
     }
